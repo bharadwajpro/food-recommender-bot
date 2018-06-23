@@ -1,0 +1,269 @@
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>EATERIES</pattern>
+        <template>
+            <system>python ./services/eateries.py</system>
+        </template>
+    </category>
+    <category>
+        <pattern>FOODS</pattern>
+        <template>
+            <srai>python ./services/foods.py</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>EATERIES *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* EATERIES</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* EATERIES *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>EATERY</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>EATERY *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* EATERY</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* EATERY *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EAT</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>EAT *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* EAT</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* EAT *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HUNGRY</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HUNGRY *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* HUNGRY</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* HUNGRY *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* FOOD *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* FOOD</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>FOOD *</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>FOOD</pattern>
+        <template>
+            <srai>EATERIES</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SANDWICH</pattern>
+        <template>
+            <srai>FOODS SANDWICH</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>SANDWICH *</pattern>
+        <template>
+            <srai>FOODS SANDWICH</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* SANDWICH</pattern>
+        <template>
+            <srai>FOODS SANDWICH</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* SANDWICH *</pattern>
+        <template>
+            <srai>FOODS SANDWICH</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SAMOSA</pattern>
+        <template>
+            <srai>FOODS SAMOSA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>SAMOSA *</pattern>
+        <template>
+            <srai>FOODS SAMOSA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* SAMOSA</pattern>
+        <template>
+            <srai>FOODS SAMOSA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* SAMOSA *</pattern>
+        <template>
+            <srai>FOODS SAMOSA</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOODLES</pattern>
+        <template>
+            <srai>FOODS NOODLES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>NOODLES *</pattern>
+        <template>
+            <srai>FOODS NOODLES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* NOODLES</pattern>
+        <template>
+            <srai>FOODS NOODLES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* NOODLES *</pattern>
+        <template>
+            <srai>FOODS NOODLES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RICE</pattern>
+        <template>
+            <srai>FOODS RICE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>RICE *</pattern>
+        <template>
+            <srai>FOODS RICE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* RICE</pattern>
+        <template>
+            <srai>FOODS RICE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* RICE *</pattern>
+        <template>
+            <srai>FOODS RICE</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>PARATHA</pattern>
+        <template>
+            <srai>FOODS PARATHA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>PARATHA *</pattern>
+        <template>
+            <srai>FOODS PARATHA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* PARATHA</pattern>
+        <template>
+            <srai>FOODS PARATHA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* PARATHA *</pattern>
+        <template>
+            <srai>FOODS PARATHA</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>IS * OPEN NOW</pattern>
+        <template>
+            <system>python ./services/eateries.py <star/></system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FOODS *</pattern>
+        <template>
+            <system>python ./services/foods.py <star/></system>
+        </template>
+    </category>
+</aiml>

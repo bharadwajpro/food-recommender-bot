@@ -1,0 +1,22 @@
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>LOAD ALL</pattern>
+        <template>
+            <learn>./aiml-xmls/eateries.xml</learn>
+            <learn>./aiml-xmls/hello.xml</learn>
+            <learn>./aiml-xmls/jokes.xml</learn>
+            <learn>./aiml-xmls/name.xml</learn>
+            <learn>./aiml-xmls/random-num.xml</learn>
+            <learn>./aiml-xmls/weather.xml</learn>
+            <learn>./aiml-xmls/xkcd.xml</learn>
+            Loaded all files
+        </template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Sorry! I don't know how to respond to that. I am still learning.
+            Meanwhile, You can look at Google Search Results here - https://www.google.com/search?q=<system>python ./services/search.py <star/></system>
+        </template>
+    </category>
+</aiml>

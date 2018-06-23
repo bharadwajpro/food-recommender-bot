@@ -1,0 +1,32 @@
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>ROLL A DIE</pattern>
+        <template>
+            The result is
+            <random>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>FLIP A COIN</pattern>
+        <template>
+            The result is
+            <random>
+                <li>Heads</li>
+                <li>Tails</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>GENERATE A RANDOM NUMBER BETWEEN * AND *</pattern>
+        <template>
+            <system>python ./services/randomgen.py <star/> <star index="2"/></system>
+        </template>
+    </category>
+</aiml>

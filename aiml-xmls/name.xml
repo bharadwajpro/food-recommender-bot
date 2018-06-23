@@ -1,0 +1,111 @@
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>
+            Nice to meet you, <set name="username"><star/></set>. What can I do for you?
+            <think><set name="namecheck">yes</set></think>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>
+            My name is 'The Bot'. What's yours?
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS MY NAME</pattern>
+        <template>
+            <condition name="username" value="">
+                <srai>USER NAME</srai>
+                <think><set name="namecheck">no</set></think>
+            </condition>
+            <condition name="namecheck" value="yes">
+                I know your name. Your name is <get name="username"/>
+            </condition>
+        </template>
+    </category>
+    <category>
+        <pattern>USER NAME</pattern>
+        <template>
+            Sorry! I don't know your name. May I know your name?
+        </template>
+    </category>
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            I am fine. How are you?
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FINE</pattern>
+        <template>
+            Good to know that. What can I do for you today?
+        </template>
+    </category>
+    <category>
+        <pattern>I AM NOT FINE</pattern>
+        <template>
+            I am sorry to hear that. May I assist you in any way?
+        </template>
+    </category>
+    <category>
+        <pattern>I DO NOT FEEL WELL</pattern>
+        <template>
+            I am sorry to hear that. May I know your condition?
+        </template>
+    </category>
+    <category>
+        <pattern>I HAVE A COLD</pattern>
+        <template>
+            I would recommend you have some hot soup and take a nap.
+        </template>
+    </category>
+    <category>
+        <pattern>I HAVE A FEVER</pattern>
+        <template>
+            I would recommend you have some hot soup and take a paracetamol.
+        </template>
+    </category>
+    <category>
+        <pattern>I HAVE BODY PAINS</pattern>
+        <template>
+            I would recommend you take a paracetamol and get some rest.
+        </template>
+    </category>
+    <category>
+        <pattern>CAN YOU RECOMMEND ME MEDICINE FOR COLD</pattern>
+        <template>
+            Please have a Crocin.
+        </template>
+    </category>
+    <category>
+        <pattern>I AM GOING THROUGH A BREAKUP</pattern>
+        <template>
+            It's a pity. She just lost a gem of a man.
+        </template>
+    </category>
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            Welcome. I am glad that I was able to help you.
+        </template>
+    </category>
+    <category>
+        <pattern>THANKS</pattern>
+        <template>
+            <srai>THANK YOU</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>BYE</pattern>
+        <template>
+            Ok bye.
+        </template>
+    </category>
+    <category>
+        <pattern>GOOD BYE</pattern>
+        <template>
+            <srai>BYE</srai>
+        </template>
+    </category>
+</aiml>

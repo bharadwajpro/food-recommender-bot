@@ -1,0 +1,57 @@
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>JOKES</pattern>
+        <template>
+            <system>python ./services/jokes.py</system>
+        </template>
+    </category>
+    <category>
+        <pattern>JOKES *</pattern>
+        <template>
+            <srai>JOKES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* JOKES</pattern>
+        <template>
+            <srai>JOKES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* JOKES *</pattern>
+        <template>
+            <srai>JOKES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>JOKE</pattern>
+        <template>
+            <system>python ./services/jokes.py</system>
+        </template>
+    </category>
+    <category>
+        <pattern>JOKE *</pattern>
+        <template>
+            <srai>JOKE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* JOKE</pattern>
+        <template>
+            <srai>JOKE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* JOKE *</pattern>
+        <template>
+            <srai>JOKE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LAUGH</pattern>
+        <template>
+            <srai>JOKE</srai>
+        </template>
+    </category>
+</aiml>

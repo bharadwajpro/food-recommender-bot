@@ -1,0 +1,26 @@
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>WEATHER</pattern>
+        <template>
+            <system>python ./services/weather.py</system>
+        </template>
+    </category>
+    <category>
+        <pattern>WEATHER *</pattern>
+        <template>
+            <srai>WEATHER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* WEATHER</pattern>
+        <template>
+            <srai>WEATHER</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* WEATHER *</pattern>
+        <template>
+            <srai>WEATHER</srai>
+        </template>
+    </category>
+</aiml>

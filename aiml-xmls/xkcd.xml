@@ -1,0 +1,26 @@
+<aiml version="2.0" encoding="UTF-8">
+    <category>
+        <pattern>XKCD</pattern>
+        <template>
+            <system>python ./services/xkcd.py</system>
+        </template>
+    </category>
+    <category>
+        <pattern>XKCD *</pattern>
+        <template>
+            <srai>XKCD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* XKCD</pattern>
+        <template>
+            <srai>XKCD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* XKCD *</pattern>
+        <template>
+            <srai>XKCD</srai>
+        </template>
+    </category>
+</aiml>
